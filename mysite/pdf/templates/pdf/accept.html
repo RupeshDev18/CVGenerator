@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <form method="POST">
+                        {% csrf_token %}
+                      <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">Email</label>
+                          <input type="email" class="form-control" id="email" name="email">
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">Phone</label>
+                          <input type="text" class="form-control" id="phone" name="phone">
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">About You</label>
+                          <textarea type="text" class="form-control" id="summary" name="summary"></textarea>
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">Degree</label>
+                          <input type="text" class="form-control" id="degree" name="degree">
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">School</label>
+                          <input type="text" class="form-control" id="school" name="school">
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">University</label>
+                          <input type="text" class="form-control" id="university" name="university">
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">Previous Work</label>
+                          <textarea type="text" class="form-control" id="previous_work" name="previous_work"></textarea>
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="">Skills</label>
+                          <textarea type="text" class="form-control" id="skills" name="skills"></textarea>
+                      </div>
+          
+                      
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        <script src="" async defer></script>
+    </body>
+</html>
